@@ -1,7 +1,8 @@
 {
 	"$schema": "https://schema.kunkun.sh/",
 	"name": "kunkun-ext-jwt",
-	"version": "0.0.9",
+	"version": "0.1.1",
+	"licence": "MIT",
 	"repository": "https://github.com/kunkunsh/kunkun-ext-jwt",
 	"kunkun": {
 		"name": "JWT Inspector",
