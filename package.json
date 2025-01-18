@@ -2,7 +2,7 @@
 	"$schema": "https://schema.kunkun.sh/",
 	"name": "kunkun-ext-jwt",
 	"version": "0.0.9",
-	"private": true,
+	"repository": "https://github.com/kunkunsh/kunkun-ext-jwt",
 	"kunkun": {
 		"name": "JWT Inspector",
 		"shortDescription": "Inspect JWT Token",
