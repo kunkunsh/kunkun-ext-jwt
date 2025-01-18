@@ -20,4 +20,6 @@ jobs:
       - name: Build
         run: bun run build
       - name: Publish package
-        run: npx jsr publish
+        run: |
+          bunx kksh@latest verify --publish
+          bunx jsr publish
