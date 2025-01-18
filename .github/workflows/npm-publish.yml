@@ -22,13 +22,9 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
       - uses: oven-sh/setup-bun@v2
-      - run: pnpm install
-      - run: pnpm build
+      - run: bun install
+      - run: bun run build
       - run: |
           PACKAGE_NAME=$(jq -r '.name' package.json)
           PACKAGE_VERSION=$(jq -r '.version' package.json)
