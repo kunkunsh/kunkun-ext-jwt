@@ -1,8 +1,8 @@
 {
 	"$schema": "https://schema.kunkun.sh/",
 	"name": "kunkun-ext-jwt",
-	"version": "0.1.1",
-	"licence": "MIT",
+	"version": "0.1.3",
+	"license": "MIT",
 	"repository": "https://github.com/kunkunsh/kunkun-ext-jwt",
 	"kunkun": {
 		"name": "JWT Inspector",
@@ -56,7 +56,11 @@
 		"templateUiCmds": []
 	},
 	"files": [
-		"build"
+		"build",
+		"README.md",
+		"package.json",
+		"mod.ts",
+		"demo-images"
 	],
 	"scripts": {
 		"dev": "vite dev",

@@ -1,9 +1,9 @@
 {
-  "name": "@kunkun/kunkun-ext-jwt",
-  "version": "0.1.1",
-  "license": "MIT",
-  "exports": "./mod.ts",
-  "publish": {
-    "include": ["build", "README.md", "package.json", "mod.ts"]
-  }
+	"name": "@kunkun/kunkun-ext-jwt",
+	"version": "0.1.3",
+	"license": "MIT",
+	"exports": "./mod.ts",
+	"publish": {
+		"include": ["build", "README.md", "package.json", "mod.ts", "demo-images"]
+	}
 }
