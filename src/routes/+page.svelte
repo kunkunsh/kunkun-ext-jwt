@@ -68,7 +68,7 @@
 		<div class="kunkun-drag-region h-8" />
 		<Resizable.PaneGroup direction="horizontal" class="h-full w-full rounded-lg pb-2">
 			<Resizable.Pane defaultSize={50}>
-				<div class="flex h-full w-full flex-col gap-1.5 px-3">
+				<div class="flex h-full w-full flex-col gap-1.5 overflow-y-auto px-3">
 					<Label for="message" class="text-lg">JWT Token</Label>
 					<div class="grow">
 						<span class="box-border whitespace-pre-wrap text-wrap break-words text-red-400"
@@ -87,13 +87,15 @@
 				</div>
 			</Resizable.Pane>
 			<Resizable.Handle />
-			<Resizable.Pane defaultSize={50} class="px-4">
-				<Label for="message"
-					>HEADER: <span class="text-muted-foreground">Algorithm & Token Type</span></Label
-				>
-				<pre class="text-red-400">{JSON.stringify(header, null, 2)}</pre>
-				<Label for="message">PAYLOAD: <span class="text-muted-foreground">DATA</span></Label>
-				<pre class=" text-purple-400">{JSON.stringify(payload, null, 2)}</pre>
+			<Resizable.Pane defaultSize={50}>
+				<div class="h-full w-full flex flex-col overflow-auto px-4">
+					<Label for="message"
+						>HEADER: <span class="text-muted-foreground">Algorithm & Token Type</span></Label
+					>
+					<pre class="text-red-400">{JSON.stringify(header, null, 2)}</pre>
+					<Label for="message">PAYLOAD: <span class="text-muted-foreground">DATA</span></Label>
+					<pre class=" text-purple-400">{JSON.stringify(payload, null, 2)}</pre>
+				</div>
 			</Resizable.Pane>
 		</Resizable.PaneGroup>
 	</div>

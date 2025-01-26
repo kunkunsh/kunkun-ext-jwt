@@ -79,11 +79,17 @@
 			return date;
 		}
 	}
+
+	function onKeyDown(e: KeyboardEvent) {
+		if (e.key === 'Escape') {
+			ui.goBack();
+		}
+	}
 </script>
 
 <ThemeWrapper>
 	<Command.Root class="h-screen w-full px-2">
-		<Command.Input placeholder="Type a command or search..." autofocus />
+		<Command.Input placeholder="Type a command or search..." autofocus on:keydown={onKeyDown} />
 		<Command.List class="h-full">
 			<Command.Empty>
 				No JWT found in Clipboard.
