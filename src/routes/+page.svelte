@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Resizable, Textarea, Label, Toaster, ThemeWrapper } from '@kksh/svelte';
+	import { Button, Resizable, Textarea, Label, Toaster, ThemeWrapper } from '@kksh/svelte5';
 	import { onMount } from 'svelte';
 	import * as jose from 'jose';
 	import { JwtToken, jwtIsValid, splitJwt } from '$lib/jwt';
@@ -65,7 +65,7 @@
 <ModeWatcher />
 <ThemeWrapper>
 	<div class="flex h-screen flex-col border px-1">
-		<div class="kunkun-drag-region h-8" />
+		<div class="kunkun-drag-region h-8"></div>
 		<Resizable.PaneGroup direction="horizontal" class="h-full w-full rounded-lg pb-2">
 			<Resizable.Pane defaultSize={50}>
 				<div class="flex h-full w-full flex-col gap-1.5 overflow-y-auto px-3">
@@ -83,7 +83,7 @@
 							>{jwtToken.signature}</span
 						>
 					</div>
-					<Button class="" on:click={pasteJwt}>Paste JWT</Button>
+					<Button class="" onclick={pasteJwt}>Paste JWT</Button>
 				</div>
 			</Resizable.Pane>
 			<Resizable.Handle />

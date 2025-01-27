@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Alert, Button, ThemeWrapper, Command } from '@kksh/svelte';
+	import { Alert, Button, ThemeWrapper, Command } from '@kksh/svelte5';
 	import Calendar from 'lucide-svelte/icons/calendar';
 	import * as jose from 'jose';
 	import { JwtToken, jwtIsValid, splitJwt, claimsDef } from '$lib/jwt';
@@ -89,12 +89,12 @@
 
 <ThemeWrapper>
 	<Command.Root class="h-screen w-full px-2">
-		<Command.Input placeholder="Type a command or search..." autofocus on:keydown={onKeyDown} />
+		<Command.Input placeholder="Type a command or search..." autofocus onkeydown={onKeyDown} />
 		<Command.List class="h-full">
 			<Command.Empty>
 				No JWT found in Clipboard.
 				<br />
-				<Button class="mt-5" on:click={pasteJwt}>Load From Clipboard</Button>
+				<Button class="mt-5" onclick={pasteJwt}>Load From Clipboard</Button>
 			</Command.Empty>
 			{#if Object.values(header).length > 0}
 				<Command.Group heading="HEAD: ALGORITHM & TOKEN TYPE">
