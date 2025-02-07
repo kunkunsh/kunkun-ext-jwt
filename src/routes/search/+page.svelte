@@ -8,7 +8,7 @@
 	import timezone from 'dayjs/plugin/timezone';
 	import utc from 'dayjs/plugin/utc';
 	import { ModeWatcher } from 'mode-watcher';
-	import { clipboard, toast, ui, log } from '@kksh/api/ui/iframe';
+	import { clipboard, toast, ui, log } from '@kksh/api/ui/custom';
 	import { parse, string, number, union, safeParse } from 'valibot';
 
 	dayjs.extend(timezone);

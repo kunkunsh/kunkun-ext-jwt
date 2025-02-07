@@ -5,7 +5,7 @@
 	import { JwtToken, jwtIsValid, splitJwt } from '$lib/jwt';
 	import { parse, flatten, safeParse } from 'valibot';
 	import { ModeWatcher } from 'mode-watcher';
-	import { clipboard, toast, ui } from '@kksh/api/ui/iframe';
+	import { clipboard, toast, ui } from '@kksh/api/ui/custom';
 
 	let jwtToken: JwtToken = {
 		header: '',
